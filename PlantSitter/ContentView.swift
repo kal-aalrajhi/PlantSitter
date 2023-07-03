@@ -32,6 +32,10 @@ struct ContentView: View {
                                 Text("Plant Type")
                                     .font(.subheadline)
                             }
+                            Spacer()
+                            Text("<img>") // add conditional for place holder vs actual image
+                                .frame(width: 50, height: 50)
+                                .background(.teal)
                         }
                     }
                 }
