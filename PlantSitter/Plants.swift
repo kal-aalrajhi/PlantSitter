@@ -16,4 +16,13 @@ class Plants: ObservableObject {
         }
     }
     
+    // Initializer will help us 'reload' our encoded data from JSON to Swift to have data persistance
+    init() {
+        if let savedPlantItems = UserDefaults.standard.data(forKey: "PlantItems") {
+            if let decodedItems = try? JSONDecoder().decode([Plant].self, from: savedPlantItems) {
+                plantItems = decodedItems
+                return
+            }
+        }
+    }
 }
