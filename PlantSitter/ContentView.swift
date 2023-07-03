@@ -9,20 +9,22 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            ScrollView(.horizontal) {
-                HStack(spacing: 10) {
-                    ForEach(0..<10) {
-                        Text("Item \($0)")
-                            .font(.largeTitle)
-                            .foregroundColor(.white)
-                            .frame(width: 150, height: 150)
-                            .background(.green)
+        NavigationView {
+            VStack {
+                ScrollView(.horizontal) {
+                    HStack(spacing: 10) {
+                        ForEach(0..<10) {
+                            Text("Item \($0)")
+                                .font(.largeTitle)
+                                .foregroundColor(.white)
+                                .frame(width: 150, height: 150)
+                                .background(.green)
+                        }
                     }
                 }
             }
+            .navigationTitle("Dashboard")
         }
-        .padding()
     }
 }
 
