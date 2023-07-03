@@ -14,12 +14,19 @@ struct ContentView: View {
                 ScrollView(.horizontal) {
                     HStack(spacing: 10) {
                         ForEach(0..<10) {
-                            Text("Item \($0)")
+                            Text("Room \($0)")
                                 .font(.largeTitle)
                                 .foregroundColor(.white)
                                 .frame(width: 150, height: 150)
                                 .background(.green)
                         }
+                    }
+                }
+                
+                List {
+                    ForEach(0..<20) {
+                        Text("Plant \($0)")
+                            .frame(width: .infinity, height: 50)
                     }
                 }
             }
