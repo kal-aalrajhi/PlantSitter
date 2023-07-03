@@ -24,9 +24,15 @@ struct ContentView: View {
                 }
                 
                 List {
-                    ForEach(0..<20) {
-                        Text("Plant \($0)")
-                            .frame(width: .infinity, height: 50)
+                    ForEach(0..<20) { plant in
+                        HStack {
+                            VStack(alignment: .leading) {
+                                Text("Plant")
+                                    .font(.headline)
+                                Text("Plant Type")
+                                    .font(.subheadline)
+                            }
+                        }
                     }
                 }
             }
