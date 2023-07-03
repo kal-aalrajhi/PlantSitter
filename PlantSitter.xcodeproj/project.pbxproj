@@ -12,6 +12,7 @@
 		B75320CC2A5080780047E2E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B75320CB2A5080780047E2E0 /* Assets.xcassets */; };
 		B75320CF2A5080780047E2E0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B75320CE2A5080780047E2E0 /* Preview Assets.xcassets */; };
 		B7B490622A533AA200C8E82F /* Plant.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B490612A533AA200C8E82F /* Plant.swift */; };
+		B7B490642A533B8800C8E82F /* Plants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B490632A533B8800C8E82F /* Plants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		B75320CB2A5080780047E2E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B75320CE2A5080780047E2E0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B7B490612A533AA200C8E82F /* Plant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plant.swift; sourceTree = "<group>"; };
+		B7B490632A533B8800C8E82F /* Plants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,9 +57,10 @@
 			children = (
 				B75320C72A5080770047E2E0 /* PlantSitterApp.swift */,
 				B75320C92A5080770047E2E0 /* ContentView.swift */,
+				B7B490612A533AA200C8E82F /* Plant.swift */,
+				B7B490632A533B8800C8E82F /* Plants.swift */,
 				B75320CB2A5080780047E2E0 /* Assets.xcassets */,
 				B75320CD2A5080780047E2E0 /* Preview Content */,
-				B7B490612A533AA200C8E82F /* Plant.swift */,
 			);
 			path = PlantSitter;
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B75320CA2A5080770047E2E0 /* ContentView.swift in Sources */,
+				B7B490642A533B8800C8E82F /* Plants.swift in Sources */,
 				B7B490622A533AA200C8E82F /* Plant.swift in Sources */,
 				B75320C82A5080770047E2E0 /* PlantSitterApp.swift in Sources */,
 			);
