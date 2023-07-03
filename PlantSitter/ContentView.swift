@@ -22,7 +22,6 @@ struct ContentView: View {
                         }
                     }
                 }
-                
                 List {
                     ForEach(0..<20) { plant in
                         HStack {
