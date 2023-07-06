@@ -12,6 +12,23 @@ struct Plant: Identifiable, Codable {
     let name: String
     let type: String
     let room: String
-    let whenLastWatered: String
-    let whenToWaterNext: String
+    var whenLastWatered: String
+    var whenToWaterNext: String
+
+    init(name: String, type: String, room: String, whenLastWatered: String = "", whenToWaterNext: String = "") {
+        self.name = name
+        self.type = type
+        self.room = room
+        self.whenLastWatered = whenLastWatered
+        self.whenToWaterNext = whenToWaterNext
+    }
 }
+
+// use a convenience initializer
+extension Plant {
+    init(name: String, type: String, room: String) {
+        self.init(name: name, type: type, room: room, whenLastWatered: "", whenToWaterNext: "")
+    }
+}
+
+

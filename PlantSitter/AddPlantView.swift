@@ -31,7 +31,7 @@ struct AddPlantView: View {
             .navigationTitle("Add new plant")
             .toolbar {
                 Button("Save") {
-                    let plant = Plant(name: name, type: type, room: room, whenLastWatered: "", whenToWaterNext: "")
+                    let newPlant = Plant(name: name, type: type, room: room)
                 }
             }
         }
