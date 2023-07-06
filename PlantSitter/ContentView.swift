@@ -65,7 +65,7 @@ struct ContentView: View {
             AddPlantView(plants: plants)
         }
     }
-    // Functions here 
+    // Functions here
     func removeItems(at offsets: IndexSet) {
         plants.plantItems.remove(atOffsets: offsets)
     }

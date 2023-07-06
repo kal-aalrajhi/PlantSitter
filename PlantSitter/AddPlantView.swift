@@ -20,22 +20,26 @@ struct AddPlantView: View {
     var body: some View {
         NavigationView {
             Form {
-                TextField("Name (required)", text: $name)
-                
-                TextField("Plant Type", text: $type)
-                
-                Picker("Room", selection: $room) {
-                    ForEach(rooms, id: \.self) { Text($0) }
+                Section {
+                    TextField("Name (required)", text: $name)
+                    
+                    TextField("Plant Type", text: $type)
+                    
+                    Picker("Room", selection: $room) {
+                        ForEach(rooms, id: \.self) { Text($0) }
+                    }
                 }
+                
+                Section {
+                    Button("Save") {
+                        let newPlant = Plant(name: name, type: type, room: room)
+                        plants.plantItems.append(newPlant)
+                        dismiss()
+                    }
+                }
+                .disabled(name.isEmpty)
             }
             .navigationTitle("Add new plant")
-            .toolbar {
-                Button("Save") {
-                    let newPlant = Plant(name: name, type: type, room: room)
-                    plants.plantItems.append(newPlant)
-                    dismiss()
-                }
-            }
         }
     }
 }
