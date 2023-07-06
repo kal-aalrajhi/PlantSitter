@@ -50,8 +50,6 @@ struct ContentView: View {
             .toolbar {
                 Button {
                     showingAddPlantView = true
-                    let newPlant = Plant(name: "Tiny Dancer", type: "Springo", room: "Bedroom", whenLastWatered: "04/20/2023", whenToWaterNext: "04/27/2023")
-                    plants.plantItems.append(newPlant)
                 } label: {
                     Image(systemName: "plus")
                         .font(.system(size: 20))
@@ -63,8 +61,11 @@ struct ContentView: View {
                 }
             }
         }
+        .sheet(isPresented: $showingAddPlantView) {
+            AddPlantView(plants: plants)
+        }
     }
-    // Functions Here
+    // Functions here 
     func removeItems(at offsets: IndexSet) {
         plants.plantItems.remove(atOffsets: offsets)
     }

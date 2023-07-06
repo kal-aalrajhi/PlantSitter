@@ -32,21 +32,13 @@ struct AddPlantView: View {
             .toolbar {
                 Button("Save") {
                     let newPlant = Plant(name: name, type: type, room: room)
+                    plants.plantItems.append(newPlant)
+                    dismiss()
                 }
             }
         }
     }
 }
-
-//struct Plant: Identifiable, Codable {
-//    var id = UUID()
-//    let name: String
-//    let type: String
-//    let room: String
-//    let whenLastWatered: String
-//    let whenToWaterNext: String
-//}
-
 
 struct AddPlantView_Previews: PreviewProvider {
     static var previews: some View {
