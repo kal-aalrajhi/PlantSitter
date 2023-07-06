@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B731F1422A57081E006C9F13 /* AddPlantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B731F1412A57081E006C9F13 /* AddPlantView.swift */; };
 		B75320C82A5080770047E2E0 /* PlantSitterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75320C72A5080770047E2E0 /* PlantSitterApp.swift */; };
 		B75320CA2A5080770047E2E0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75320C92A5080770047E2E0 /* ContentView.swift */; };
 		B75320CC2A5080780047E2E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B75320CB2A5080780047E2E0 /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B731F1412A57081E006C9F13 /* AddPlantView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPlantView.swift; sourceTree = "<group>"; };
 		B75320C42A5080770047E2E0 /* PlantSitter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlantSitter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B75320C72A5080770047E2E0 /* PlantSitterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantSitterApp.swift; sourceTree = "<group>"; };
 		B75320C92A5080770047E2E0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 			children = (
 				B75320C72A5080770047E2E0 /* PlantSitterApp.swift */,
 				B75320C92A5080770047E2E0 /* ContentView.swift */,
+				B731F1412A57081E006C9F13 /* AddPlantView.swift */,
 				B7B490612A533AA200C8E82F /* Plant.swift */,
 				B7B490632A533B8800C8E82F /* Plants.swift */,
 				B75320CB2A5080780047E2E0 /* Assets.xcassets */,
@@ -146,6 +149,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B731F1422A57081E006C9F13 /* AddPlantView.swift in Sources */,
 				B75320CA2A5080770047E2E0 /* ContentView.swift in Sources */,
 				B7B490662A546BFE00C8E82F /* TestView.swift in Sources */,
 				B7B490642A533B8800C8E82F /* Plants.swift in Sources */,

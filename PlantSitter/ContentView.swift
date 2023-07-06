@@ -43,13 +43,14 @@ struct ContentView: View {
                                 .background(.teal)
                         }
                     }
+                    .onDelete(perform: removeItems)
                 }
             }
             .navigationTitle("Dashboard")
             .toolbar {
                 Button {
                     showingAddPlantView = true
-                    var newPlant = Plant(name: "Tiny Dancer", type: "Springo", room: "Bedroom", whenLastWatered: "04/20/2023", whenToWaterNext: "04/27/2023")
+                    let newPlant = Plant(name: "Tiny Dancer", type: "Springo", room: "Bedroom", whenLastWatered: "04/20/2023", whenToWaterNext: "04/27/2023")
                     plants.plantItems.append(newPlant)
                 } label: {
                     Image(systemName: "plus")
@@ -62,6 +63,10 @@ struct ContentView: View {
                 }
             }
         }
+    }
+    // Functions Here
+    func removeItems(at offsets: IndexSet) {
+        plants.plantItems.remove(atOffsets: offsets)
     }
 }
 
