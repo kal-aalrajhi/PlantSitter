@@ -15,7 +15,7 @@ struct AddPlantView: View {
     @State private var type = ""
     @State private var room = ""
     
-    let rooms = ["Bedroom", "Living Room", "Kitchen", "Office", "Patio", "Balcony", "Other"]
+    let rooms = ["Bedroom", "Living Room", "Kitchen", "Office", "Patio", "Balcony", "Bathroom", "Other"]
     
     var body: some View {
         NavigationView {
